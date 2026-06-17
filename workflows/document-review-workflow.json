@@ -1,0 +1,53 @@
+{
+  "name": "Legal Document Review Workflow",
+  "active": false,
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Document Uploaded",
+      "type": "n8n-nodes-base.webhook",
+      "position": [200, 300]
+    },
+    {
+      "id": "2",
+      "name": "Retrieve Document",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [450, 300],
+      "parameters": {
+        "url": "http://localhost:8000/documents",
+        "method": "GET"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Generate Legal Summary",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [700, 300],
+      "parameters": {
+        "url": "http://localhost:8000/legal/summary",
+        "method": "GET"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Store Knowledge Entry",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [950, 300],
+      "parameters": {
+        "url": "http://localhost:8000/knowledge/search",
+        "method": "GET"
+      }
+    }
+  ],
+  "connections": {
+    "Document Uploaded": {
+      "main": [[{ "node": "Retrieve Document", "type": "main" }]]
+    },
+    "Retrieve Document": {
+      "main": [[{ "node": "Generate Legal Summary", "type": "main" }]]
+    },
+    "Generate Legal Summary": {
+      "main": [[{ "node": "Store Knowledge Entry", "type": "main" }]]
+    }
+  }
+}
