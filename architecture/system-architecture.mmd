@@ -1,0 +1,16 @@
+flowchart LR
+
+LegalDocuments --> KnowledgeLayer
+KnowledgeLayer --> LegalDatabase
+LegalDatabase --> WorkflowAutomation
+
+WorkflowAutomation --> LegalAIEngine
+LegalAIEngine --> KnowledgeRetrieval
+KnowledgeRetrieval --> LegalInsights
+
+LegalDatabase --> PostgreSQL
+WorkflowAutomation --> n8n
+WorkflowAutomation --> Make
+
+LegalAIEngine --> OpenAI
+LegalAIEngine --> Claude
