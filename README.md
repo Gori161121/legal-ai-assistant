@@ -1,132 +1,163 @@
 # Legal AI Assistant
 
-### AI-Powered Legal Operations & Document Intelligence Platform
+### Making Legal Knowledge Accessible, Searchable, and Actionable
 
-Legal AI Assistant is an intelligent legal operations platform designed to organize legal knowledge, automate workflows, improve document accessibility, and provide AI-powered legal intelligence.
+Legal organizations produce enormous amounts of information.
 
----
+Contracts, agreements, policies, regulations, internal documents, legal research, and case materials continue to grow every year.
 
-# Executive Summary
+The challenge is rarely the absence of legal knowledge.
 
-Legal teams often work with large document collections, manual research processes, repetitive administrative tasks, and fragmented information sources.
+The challenge is finding the right information at the right time.
 
-Legal AI Assistant transforms legal operations into an intelligent, searchable, automated, and data-driven ecosystem.
-
----
-
-# Business Vision
-
-Build a Legal Operations System capable of managing:
-
-* Legal Documents
-* Contracts
-* Case Information
-* Knowledge Retrieval
-* Legal Research Support
-* Workflow Automation
-* Document Intelligence
-* AI Legal Assistance
-
-from a single platform.
+Legal AI Assistant is designed to transform legal information into accessible, structured, and actionable knowledge.
 
 ---
 
-# Core Domains
+## The Problem
 
-## Legal Knowledge Management
+Legal professionals spend significant time:
 
-* document organization
-* indexing
-* retrieval
-* search
+* searching for documents
+* reviewing contracts
+* organizing legal knowledge
+* locating relevant information
+* navigating fragmented document repositories
 
-## Document Intelligence
+As document volume increases, information becomes harder to access.
 
-* AI summaries
-* contract analysis
-* document classification
+The result is slower workflows, duplicated effort, and reduced operational efficiency.
 
-## Workflow Automation
+---
 
-* legal workflows
-* approvals
-* routing
+## The Idea
+
+Legal AI Assistant is designed as a Legal Knowledge & Document Intelligence Platform.
+
+Instead of focusing solely on documents, the platform focuses on knowledge.
+
+The objective is to create an environment where legal information can be:
+
+* organized
+* indexed
+* searched
+* summarized
+* connected
+* retrieved efficiently
+
+---
+
+## Core Areas
+
+### Legal Knowledge Management
+
+Creating a structured legal knowledge repository.
+
+Examples:
+
+* legal documents
+* contracts
+* agreements
+* internal policies
+
+---
+
+### Document Intelligence
+
+Improving accessibility through AI-assisted processing.
+
+Examples:
+
+* document summaries
+* classification
+* content extraction
+* information retrieval
+
+---
+
+### Workflow Automation
+
+Reducing repetitive legal administration.
+
+Examples:
+
+* document routing
+* approval workflows
 * notifications
-
-## Legal Analytics
-
-* legal KPIs
-* operational visibility
-* activity monitoring
-
-## AI Legal Engine
-
-* knowledge retrieval
-* legal insights
-* document recommendations
-* workflow support
+* review processes
 
 ---
 
-# Technology Ecosystem
+### Legal Intelligence
 
-## Development
+Providing better visibility into legal information.
+
+Examples:
+
+* document insights
+* knowledge discovery
+* legal analytics
+* information recommendations
+
+---
+
+## Technology Ecosystem
+
+### Development
 
 * Python
 * JavaScript
 * Node.js
 
-## Data Platform
+### Data Layer
 
 * PostgreSQL
 * Supabase
 
-## Artificial Intelligence
-
-* OpenAI API
-* Claude AI
-* AI Agents
-
-## Automation
+### Automation
 
 * n8n
 * Make
 * REST APIs
 
-## Infrastructure
+### Intelligence Layer
 
-* Docker
-* AWS
-
----
-
-# Repository Structure
-
-| Module       | Description                         |
-| ------------ | ----------------------------------- |
-| docs         | Product overview and vision         |
-| architecture | Legal system architecture           |
-| database     | Legal knowledge structure           |
-| workflows    | Legal workflow automation           |
-| roadmap      | Product roadmap                     |
-| ui           | Interface concepts                  |
-| diagrams     | System flow diagrams                |
-| demo         | Demonstration scenarios             |
-| src          | Planned implementation architecture |
+* OpenAI API
+* Claude AI
+* AI Agents
 
 ---
 
-# Future Expansion
+## Repository Structure
 
-* Legal Knowledge Graph
-* Compliance Monitoring
-* Contract Intelligence
-* Legal Risk Analysis
-* AI Research Assistant
+| Section      | Purpose                            |
+| ------------ | ---------------------------------- |
+| docs         | Product overview and legal context |
+| architecture | System architecture                |
+| database     | Knowledge structure                |
+| workflows    | Legal workflows                    |
+| roadmap      | Product roadmap                    |
+| ui           | Interface concepts                 |
+| diagrams     | System flows                       |
+| demo         | Demonstration scenarios            |
+| src          | Planned implementation structure   |
 
 ---
 
-# Related Projects
+## Long-Term Direction
+
+Future development may include:
+
+* contract intelligence
+* legal knowledge graph
+* compliance monitoring
+* legal research support
+* legal risk analysis
+* AI knowledge assistant
+
+---
+
+## Related Projects
 
 * Business Operations AI Platform
 * AutoConnect
@@ -136,12 +167,8 @@ from a single platform.
 
 ---
 
-# Project Status
+## End Goal
 
-Architecture, planning, documentation, and platform design are currently in progress.
+Create a system where legal information is no longer buried inside documents.
 
----
-
-# End Goal
-
-Create an intelligent Legal Operations System capable of organizing legal knowledge, automating workflows, improving document accessibility, and delivering AI-powered legal intelligence.
+A platform that transforms legal documents into usable knowledge.
