@@ -1,0 +1,46 @@
+openapi: 3.0.3
+
+info:
+  title: Legal AI Assistant API
+  description: API specification for legal documents, case management and legal knowledge retrieval.
+  version: 1.0.0
+
+servers:
+  - url: https://api.legal-assistant.local
+
+paths:
+
+  /health:
+    get:
+      summary: Health Check
+      responses:
+        '200':
+          description: Service is running
+
+  /documents:
+    get:
+      summary: Get Legal Documents
+      responses:
+        '200':
+          description: Document list returned
+
+  /cases:
+    get:
+      summary: Get Cases
+      responses:
+        '200':
+          description: Case list returned
+
+  /legal/summary:
+    get:
+      summary: Legal Operations Summary
+      responses:
+        '200':
+          description: Legal summary generated
+
+  /knowledge/search:
+    get:
+      summary: Search Legal Knowledge
+      responses:
+        '200':
+          description: Knowledge search results returned
