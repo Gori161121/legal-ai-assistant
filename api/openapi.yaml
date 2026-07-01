@@ -1,46 +1,148 @@
 openapi: 3.0.3
 
 info:
-  title: Legal AI Assistant API
-  description: API specification for legal documents, case management and legal knowledge retrieval.
-  version: 1.0.0
+  title: Legal Intake Platform API
+  description: >
+    AI-assisted client intake for a law firm: a conversational intake agent,
+    matter triage, conflict check, lawyer routing, consultation scheduling,
+    knowledge-base retrieval and a client portal. Intake and general information
+    only — not legal advice.
+  version: 0.2.0
 
 servers:
-  - url: https://api.legal-assistant.local
+  - url: http://localhost:8000
 
 paths:
-
   /health:
     get:
-      summary: Health Check
+      summary: Health check
       responses:
-        '200':
-          description: Service is running
+        "200": { description: Service is running }
 
-  /documents:
+  /lawyers:
     get:
-      summary: Get Legal Documents
+      summary: List lawyers
       responses:
-        '200':
-          description: Document list returned
+        "200": { description: Lawyer list }
 
-  /cases:
+  /intakes:
     get:
-      summary: Get Cases
+      summary: List client intakes
       responses:
-        '200':
-          description: Case list returned
+        "200": { description: Intake list }
 
-  /legal/summary:
+  /appointments:
     get:
-      summary: Legal Operations Summary
+      summary: List appointments
       responses:
-        '200':
-          description: Legal summary generated
+        "200": { description: Appointment list }
+
+  /intake/chat:
+    post:
+      summary: Conversational AI intake agent
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                session_id: { type: string }
+                message: { type: string }
+      responses:
+        "200": { description: Next assistant message + session state }
+
+  /intake/{id}/triage:
+    get:
+      summary: Triage a matter (practice area, urgency, lead score)
+      parameters: [{ name: id, in: path, required: true, schema: { type: integer } }]
+      responses:
+        "200": { description: Triage result }
+        "404": { description: Intake not found }
+
+  /intake/{id}/summary:
+    get:
+      summary: AI hand-off summary for the assigned lawyer
+      parameters: [{ name: id, in: path, required: true, schema: { type: integer } }]
+      responses:
+        "200": { description: Summary }
+        "404": { description: Intake not found }
+
+  /intake/{id}/routing:
+    get:
+      summary: Suggested lawyer for the matter
+      parameters: [{ name: id, in: path, required: true, schema: { type: integer } }]
+      responses:
+        "200": { description: Routing suggestion }
+
+  /intake/{id}/slots:
+    get:
+      summary: Proposed consultation slots
+      parameters: [{ name: id, in: path, required: true, schema: { type: integer } }]
+      responses:
+        "200": { description: Available slots }
+
+  /intake/{id}/documents:
+    get:
+      summary: Document checklist status
+      parameters: [{ name: id, in: path, required: true, schema: { type: integer } }]
+      responses:
+        "200": { description: Document status }
+
+  /conflict-check:
+    post:
+      summary: Conflict-of-interest check
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client_name: { type: string }
+                description: { type: string }
+      responses:
+        "200": { description: Conflict check result }
 
   /knowledge/search:
     get:
-      summary: Search Legal Knowledge
+      summary: Retrieve general information from the legal FAQ (RAG)
+      parameters: [{ name: q, in: query, required: true, schema: { type: string } }]
       responses:
-        '200':
-          description: Knowledge search results returned
+        "200": { description: Retrieved answers with disclaimer }
+
+  /pipeline:
+    get:
+      summary: Case pipeline overview
+      responses:
+        "200": { description: Pipeline counts + conversion }
+
+  /stale:
+    get:
+      summary: Intakes awaiting follow-up
+      responses:
+        "200": { description: Stale intakes }
+
+  /analytics:
+    get:
+      summary: Firm analytics (funnel, channels, demand)
+      responses:
+        "200": { description: Analytics }
+
+  /:
+    get:
+      summary: Landing page (HTML)
+      responses:
+        "200": { description: HTML }
+
+  /dashboard:
+    get:
+      summary: Lawyer dashboard (HTML)
+      responses:
+        "200": { description: HTML }
+
+  /portal/{id}:
+    get:
+      summary: Client portal (HTML)
+      parameters: [{ name: id, in: path, required: true, schema: { type: integer } }]
+      responses:
+        "200": { description: HTML }
+        "404": { description: Client not found }
