@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Lawyer Dashboard{% endblock %}
+{% block content %}
+<h1>Lawyer Dashboard</h1>
+
+<div class="grid cards">
+  <div class="card"><div class="metric">{{ pipeline.total_intakes }}</div><div class="muted">Total intakes</div></div>
+  <div class="card"><div class="metric">{{ pipeline.conversion_rate_pct }}%</div><div class="muted">Conversion rate</div></div>
+  <div class="card"><div class="metric">{{ analytics.avg_lead_score }}</div><div class="muted">Avg lead score</div></div>
+  <div class="card"><div class="metric">{{ stale|length }}</div><div class="muted">Awaiting follow-up</div></div>
+</div>
+
+<h2>Intake queue (by lead score)</h2>
+<table>
+  <tr><th>Client</th><th>Practice area</th><th>Urgency</th><th>Lead</th><th>Stage</th><th>Channel</th><th></th></tr>
+  {% for r in rows %}
+  <tr>
+    <td>{{ r.client_name }}</td>
+    <td>{{ r.practice_area }}</td>
+    <td>{{ r.urgency }}</td>
+    <td><span class="pill {{ r.lead_quality }}">{{ r.lead_score }} · {{ r.lead_quality }}</span></td>
+    <td>{{ r.stage }}</td>
+    <td>{{ r.channel }}</td>
+    <td><a href="/portal/{{ r.id }}">portal →</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h2>Practice-area demand</h2>
+<table>
+  <tr><th>Practice area</th><th>Intakes</th></tr>
+  {% for area, n in analytics.practice_area_demand.items() %}
+  <tr><td>{{ area }}</td><td>{{ n }}</td></tr>
+  {% endfor %}
+</table>
+
+{% if stale %}
+<h2>Needs follow-up</h2>
+<table>
+  <tr><th>Client</th><th>Stage</th><th>Days waiting</th></tr>
+  {% for s in stale %}
+  <tr><td>{{ s.client_name }}</td><td>{{ s.stage }}</td><td>{{ s.days_waiting }}</td></tr>
+  {% endfor %}
+</table>
+{% endif %}
+{% endblock %}

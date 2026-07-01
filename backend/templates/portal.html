@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Client Portal{% endblock %}
+{% block content %}
+<h1>Client Portal — {{ profile.intake.client_name }}</h1>
+<p class="muted">{{ profile.practice_area }} matter · Lawyer: {{ profile.assigned_lawyer }}</p>
+
+<h2>Case progress</h2>
+<div style="display:flex; gap:8px; flex-wrap:wrap">
+  {% for stage in pipeline_stages %}
+    <span class="step {% if stage == profile.stage %}active{% endif %}">{{ stage }}</span>
+  {% endfor %}
+</div>
+
+{% if profile.appointment %}
+<h2>Consultation</h2>
+<div class="card">
+  <div>Scheduled: <strong>{{ profile.appointment.scheduled_at }}</strong></div>
+  <div class="muted">Status: {{ profile.appointment.status }}</div>
+</div>
+{% endif %}
+
+<h2>Documents ({{ profile.documents.completion_pct }}% complete)</h2>
+<table>
+  <tr><th>Document</th><th>Status</th></tr>
+  {% for d in profile.documents.received %}
+  <tr><td>{{ d }}</td><td><span class="pill warm">received</span></td></tr>
+  {% endfor %}
+  {% for d in profile.documents.missing %}
+  <tr><td>{{ d }}</td><td><span class="pill hot">missing</span></td></tr>
+  {% endfor %}
+</table>
+
+{% if profile.latest_notification %}
+<h2>Latest notification</h2>
+<div class="card muted">{{ profile.latest_notification.body }}</div>
+{% endif %}
+{% endblock %}
