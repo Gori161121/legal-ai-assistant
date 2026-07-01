@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Ayşe Rəhimova",
+    "practice_areas": [
+      "Family",
+      "Immigration"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Rauf Məmmədov",
+    "practice_areas": [
+      "Corporate",
+      "Contract"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Elena Petrova",
+    "practice_areas": [
+      "Employment",
+      "Contract"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "John Carter",
+    "practice_areas": [
+      "Criminal",
+      "Family"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Nigar Alıyeva",
+    "practice_areas": [
+      "Real Estate",
+      "Corporate",
+      "IP"
+    ]
+  }
+]

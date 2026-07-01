@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "intake_id": 1,
+    "lawyer_id": 4,
+    "scheduled_at": "2026-06-08T16:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 2,
+    "intake_id": 2,
+    "lawyer_id": 3,
+    "scheduled_at": "2026-06-20T16:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 3,
+    "intake_id": 3,
+    "lawyer_id": 3,
+    "scheduled_at": "2026-07-05T11:00:00",
+    "status": "completed"
+  },
+  {
+    "id": 4,
+    "intake_id": 7,
+    "lawyer_id": 4,
+    "scheduled_at": "2026-06-30T11:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 5,
+    "intake_id": 9,
+    "lawyer_id": 1,
+    "scheduled_at": "2026-06-19T11:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 6,
+    "intake_id": 13,
+    "lawyer_id": 3,
+    "scheduled_at": "2026-07-04T15:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 7,
+    "intake_id": 14,
+    "lawyer_id": 5,
+    "scheduled_at": "2026-06-06T11:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 8,
+    "intake_id": 18,
+    "lawyer_id": 3,
+    "scheduled_at": "2026-06-22T10:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 9,
+    "intake_id": 19,
+    "lawyer_id": 1,
+    "scheduled_at": "2026-06-28T15:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 10,
+    "intake_id": 20,
+    "lawyer_id": 3,
+    "scheduled_at": "2026-06-30T10:00:00",
+    "status": "completed"
+  },
+  {
+    "id": 11,
+    "intake_id": 22,
+    "lawyer_id": 4,
+    "scheduled_at": "2026-06-07T10:00:00",
+    "status": "completed"
+  },
+  {
+    "id": 12,
+    "intake_id": 23,
+    "lawyer_id": 4,
+    "scheduled_at": "2026-06-14T10:00:00",
+    "status": "scheduled"
+  },
+  {
+    "id": 13,
+    "intake_id": 24,
+    "lawyer_id": 5,
+    "scheduled_at": "2026-06-15T16:00:00",
+    "status": "completed"
+  },
+  {
+    "id": 14,
+    "intake_id": 26,
+    "lawyer_id": 3,
+    "scheduled_at": "2026-06-15T11:00:00",
+    "status": "completed"
+  },
+  {
+    "id": 15,
+    "intake_id": 29,
+    "lawyer_id": 2,
+    "scheduled_at": "2026-06-20T14:00:00",
+    "status": "completed"
+  },
+  {
+    "id": 16,
+    "intake_id": 30,
+    "lawyer_id": 5,
+    "scheduled_at": "2026-06-19T16:00:00",
+    "status": "completed"
+  }
+]

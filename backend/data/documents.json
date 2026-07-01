@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "intake_id": 1,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 2,
+    "intake_id": 1,
+    "name": "Case summons",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 3,
+    "intake_id": 1,
+    "name": "Any evidence",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 4,
+    "intake_id": 2,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 5,
+    "intake_id": 2,
+    "name": "Employment contract",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 6,
+    "intake_id": 2,
+    "name": "Termination letter",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 7,
+    "intake_id": 3,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 8,
+    "intake_id": 3,
+    "name": "Employment contract",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 9,
+    "intake_id": 3,
+    "name": "Termination letter",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 10,
+    "intake_id": 7,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 11,
+    "intake_id": 7,
+    "name": "Marriage certificate",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 12,
+    "intake_id": 7,
+    "name": "Financial statement",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 13,
+    "intake_id": 9,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 14,
+    "intake_id": 9,
+    "name": "Marriage certificate",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 15,
+    "intake_id": 9,
+    "name": "Financial statement",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 16,
+    "intake_id": 13,
+    "name": "ID copy",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 17,
+    "intake_id": 13,
+    "name": "Employment contract",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 18,
+    "intake_id": 13,
+    "name": "Termination letter",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 19,
+    "intake_id": 14,
+    "name": "Founders' IDs",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 20,
+    "intake_id": 14,
+    "name": "Draft charter",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 21,
+    "intake_id": 14,
+    "name": "Shareholder details",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 22,
+    "intake_id": 18,
+    "name": "ID copy",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 23,
+    "intake_id": 18,
+    "name": "Signed contract",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 24,
+    "intake_id": 18,
+    "name": "Correspondence",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 25,
+    "intake_id": 19,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 26,
+    "intake_id": 19,
+    "name": "Marriage certificate",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 27,
+    "intake_id": 19,
+    "name": "Financial statement",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 28,
+    "intake_id": 20,
+    "name": "ID copy",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 29,
+    "intake_id": 20,
+    "name": "Signed contract",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 30,
+    "intake_id": 20,
+    "name": "Correspondence",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 31,
+    "intake_id": 22,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 32,
+    "intake_id": 22,
+    "name": "Marriage certificate",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 33,
+    "intake_id": 22,
+    "name": "Financial statement",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 34,
+    "intake_id": 23,
+    "name": "ID copy",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 35,
+    "intake_id": 23,
+    "name": "Case summons",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 36,
+    "intake_id": 23,
+    "name": "Any evidence",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 37,
+    "intake_id": 24,
+    "name": "ID copy",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 38,
+    "intake_id": 24,
+    "name": "Brand/logo files",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 39,
+    "intake_id": 24,
+    "name": "Prior use evidence",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 40,
+    "intake_id": 26,
+    "name": "ID copy",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 41,
+    "intake_id": 26,
+    "name": "Signed contract",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 42,
+    "intake_id": 26,
+    "name": "Correspondence",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 43,
+    "intake_id": 29,
+    "name": "Founders' IDs",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 44,
+    "intake_id": 29,
+    "name": "Draft charter",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 45,
+    "intake_id": 29,
+    "name": "Shareholder details",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 46,
+    "intake_id": 30,
+    "name": "ID copy",
+    "required": true,
+    "received": false
+  },
+  {
+    "id": 47,
+    "intake_id": 30,
+    "name": "Property documents",
+    "required": true,
+    "received": true
+  },
+  {
+    "id": 48,
+    "intake_id": 30,
+    "name": "Draft contract",
+    "required": true,
+    "received": true
+  }
+]
